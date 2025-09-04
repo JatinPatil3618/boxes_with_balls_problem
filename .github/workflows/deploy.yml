@@ -27,7 +27,7 @@ jobs:
           node-version: 20
 
       - name: Install
-        run: npm ci
+        run: npm install   # ✅ changed from npm ci
 
       - name: Build
         run: npm run build
@@ -46,3 +46,4 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
